@@ -28,7 +28,6 @@ public class VNScreenObserver {
                 } else {
                     return false
                 }
-
             }
         }
         return false
@@ -36,7 +35,7 @@ public class VNScreenObserver {
 
     private var isMirroring: Bool {
         for screen in UIScreen.screens {
-            if screen.isCaptured {
+            if screen.mirrored != nil  {
                 return true
             } else {
                 return false
@@ -58,10 +57,13 @@ public class VNScreenObserver {
 
     private var lastRecordingState: Bool = false {
         didSet {
-            if lastRecordingState {
-                observers.forEach { $0.userDidStartRecordingScreen?() }
-            } else {
-                observers.forEach { $0.userDidFinishRecordingScreen?() }
+            if #available(iOS 11.0, *) {
+                if lastRecordingState {
+
+                    observers.forEach { $0.userDidStartRecordingScreen?() }
+                } else {
+                    observers.forEach { $0.userDidFinishRecordingScreen?() }
+                }
             }
         }
     }
@@ -71,7 +73,7 @@ public class VNScreenObserver {
             if lastMirroringState {
                 observers.forEach { $0.userDidStartMirroringScreen?() }
             } else {
-                observers.forEach { $0.userDidFInishMirroringScreen?() }
+                observers.forEach { $0.userDidFinishMirroringScreen?() }
             }
         }
     }
@@ -79,9 +81,15 @@ public class VNScreenObserver {
 
     public func startDetector() {
         guard checkRecordingTimer == nil else { return }
-        checkRecordingTimer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { (timer) in
-            self.checkCurrentRecordingStatus()
+        if #available(iOS 11.0, *) {
+            checkRecordingTimer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { (timer) in
+                self.checkCurrentRecordingStatus()
+            }
+        } else {
+            checkRecordingTimer = Timer(timeInterval: 0.5, target:self, selector: #selector(checkCurrentRecordingStatus), userInfo: nil, repeats: true)
+            RunLoop.current.add(checkRecordingTimer, forMode: RunLoop.Mode.common)
         }
+
     }
 
     public func stopDetector() {
@@ -92,7 +100,7 @@ public class VNScreenObserver {
 
     private var checkRecordingTimer: Timer!
 
-    private func checkCurrentRecordingStatus() {
+    @objc private func checkCurrentRecordingStatus() {
 
         if lastRecordingState != isRecording {
             lastRecordingState = isRecording

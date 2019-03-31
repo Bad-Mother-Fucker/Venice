@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Venice"
-  spec.version      = "1.0"
+  spec.version      = "0.1.0"
   spec.summary      = "A framework that provides an observer for screen recording and screen mirroring events and a UIView that reacts to those events"
 
   # This description is used to generate tags and improve search results.
@@ -25,6 +25,8 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+Venice provides UIView subclass which reacts to screen recording and screen mirroring events. It also provides an observer to those events giving a way to react properly if you need to.
+
                    DESC
 
   spec.homepage     = "https://github.com/Bad-Mother-Fucker/Venice"
@@ -39,7 +41,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.license      = "MIT (example)"
-  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -63,8 +65,8 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  # spec.platform     = :ios
+    spec.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -90,8 +92,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-spec.source_files  = "Classes", "Classes/**/*.{swift}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "Venice", "Venice/**/*.{swift}"
+  spec.exclude_files = "Venice/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -134,6 +136,6 @@ spec.source_files  = "Classes", "Classes/**/*.{swift}"
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
 
-    s.swift_version = "4.2"
+    spec.swift_version = "4.2"
 
 end

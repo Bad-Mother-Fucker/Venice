@@ -42,7 +42,7 @@ open class VNView: UIView, VNScreenObserverDelegate {
     }
 
 
-    func userDidFInishMirroringScreen() {
+    func userDidFinishMirroringScreen() {
         stopMirroringAction()
     }
 

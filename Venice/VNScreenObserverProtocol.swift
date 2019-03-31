@@ -15,5 +15,5 @@
     @objc optional func userDidFinishRecordingScreen()
 
     @objc optional func userDidStartMirroringScreen()
-    @objc optional func userDidFInishMirroringScreen()
+    @objc optional func userDidFinishMirroringScreen()
 }
