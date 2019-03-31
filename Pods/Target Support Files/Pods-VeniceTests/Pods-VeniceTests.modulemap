@@ -1,0 +1,6 @@
+framework module Pods_VeniceTests {
+  umbrella header "Pods-VeniceTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

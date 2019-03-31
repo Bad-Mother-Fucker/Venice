@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BC8170B26AF6F3C257C303C /* Pods_VeniceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C4D327ABAB02E214D8CC75 /* Pods_VeniceTests.framework */; };
 		199A05BB224E63D700898B97 /* Venice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199A05B1224E63D700898B97 /* Venice.framework */; };
 		199A05C0224E63D700898B97 /* VeniceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A05BF224E63D700898B97 /* VeniceTests.swift */; };
 		199A05C2224E63D700898B97 /* Venice.h in Headers */ = {isa = PBXBuildFile; fileRef = 199A05B4224E63D700898B97 /* Venice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199A05CC224E649300898B97 /* VNScreenObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A05CB224E649300898B97 /* VNScreenObserver.swift */; };
+		199A05CE224E653C00898B97 /* VNScreenObserverProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A05CD224E653C00898B97 /* VNScreenObserverProtocol.swift */; };
+		199A05D0224E66F400898B97 /* VNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A05CF224E66F400898B97 /* VNView.swift */; };
+		631E4D66CD1198A856BDD841 /* Pods_Venice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1E0EAE30BA656999D4C7ED /* Pods_Venice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +28,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0371DD0EB131C2136A36145C /* Pods-VeniceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeniceTests.release.xcconfig"; path = "Target Support Files/Pods-VeniceTests/Pods-VeniceTests.release.xcconfig"; sourceTree = "<group>"; };
+		07C4D327ABAB02E214D8CC75 /* Pods_VeniceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeniceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		199A05B1224E63D700898B97 /* Venice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Venice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		199A05B4224E63D700898B97 /* Venice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Venice.h; sourceTree = "<group>"; };
 		199A05B5224E63D700898B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		199A05BA224E63D700898B97 /* VeniceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeniceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		199A05BF224E63D700898B97 /* VeniceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeniceTests.swift; sourceTree = "<group>"; };
 		199A05C1224E63D700898B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		199A05CB224E649300898B97 /* VNScreenObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNScreenObserver.swift; sourceTree = "<group>"; };
+		199A05CD224E653C00898B97 /* VNScreenObserverProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNScreenObserverProtocol.swift; sourceTree = "<group>"; };
+		199A05CF224E66F400898B97 /* VNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNView.swift; sourceTree = "<group>"; };
+		1D1E0EAE30BA656999D4C7ED /* Pods_Venice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Venice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDF452CEC81B4409B208560 /* Pods-Venice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venice.release.xcconfig"; path = "Target Support Files/Pods-Venice/Pods-Venice.release.xcconfig"; sourceTree = "<group>"; };
+		A952081167F2508AC520D07D /* Pods-VeniceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeniceTests.debug.xcconfig"; path = "Target Support Files/Pods-VeniceTests/Pods-VeniceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C78389D9932129305457FDBE /* Pods-Venice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venice.debug.xcconfig"; path = "Target Support Files/Pods-Venice/Pods-Venice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631E4D66CD1198A856BDD841 /* Pods_Venice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				199A05BB224E63D700898B97 /* Venice.framework in Frameworks */,
+				0BC8170B26AF6F3C257C303C /* Pods_VeniceTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +72,8 @@
 				199A05B3224E63D700898B97 /* Venice */,
 				199A05BE224E63D700898B97 /* VeniceTests */,
 				199A05B2224E63D700898B97 /* Products */,
+				DFA2ABEC27BC9BE06B895DBA /* Pods */,
+				782AE11BD33461258238D031 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +91,9 @@
 			children = (
 				199A05B4224E63D700898B97 /* Venice.h */,
 				199A05B5224E63D700898B97 /* Info.plist */,
+				199A05CB224E649300898B97 /* VNScreenObserver.swift */,
+				199A05CD224E653C00898B97 /* VNScreenObserverProtocol.swift */,
+				199A05CF224E66F400898B97 /* VNView.swift */,
 			);
 			path = Venice;
 			sourceTree = "<group>";
@@ -84,6 +105,27 @@
 				199A05C1224E63D700898B97 /* Info.plist */,
 			);
 			path = VeniceTests;
+			sourceTree = "<group>";
+		};
+		782AE11BD33461258238D031 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D1E0EAE30BA656999D4C7ED /* Pods_Venice.framework */,
+				07C4D327ABAB02E214D8CC75 /* Pods_VeniceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFA2ABEC27BC9BE06B895DBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C78389D9932129305457FDBE /* Pods-Venice.debug.xcconfig */,
+				6CDF452CEC81B4409B208560 /* Pods-Venice.release.xcconfig */,
+				A952081167F2508AC520D07D /* Pods-VeniceTests.debug.xcconfig */,
+				0371DD0EB131C2136A36145C /* Pods-VeniceTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +146,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 199A05C5224E63D700898B97 /* Build configuration list for PBXNativeTarget "Venice" */;
 			buildPhases = (
+				F2B642CB6851BEA0B0D5E4FD /* [CP] Check Pods Manifest.lock */,
 				199A05AC224E63D700898B97 /* Headers */,
 				199A05AD224E63D700898B97 /* Sources */,
 				199A05AE224E63D700898B97 /* Frameworks */,
@@ -122,6 +165,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 199A05C8224E63D700898B97 /* Build configuration list for PBXNativeTarget "VeniceTests" */;
 			buildPhases = (
+				1AF42BFD2431029B4ABC9F6C /* [CP] Check Pods Manifest.lock */,
 				199A05B6224E63D700898B97 /* Sources */,
 				199A05B7224E63D700898B97 /* Frameworks */,
 				199A05B8224E63D700898B97 /* Resources */,
@@ -148,6 +192,7 @@
 				TargetAttributes = {
 					199A05B0224E63D700898B97 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					199A05B9224E63D700898B97 = {
 						CreatedOnToolsVersion = 10.1;
@@ -189,11 +234,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AF42BFD2431029B4ABC9F6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VeniceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2B642CB6851BEA0B0D5E4FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Venice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		199A05AD224E63D700898B97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				199A05CC224E649300898B97 /* VNScreenObserver.swift in Sources */,
+				199A05CE224E653C00898B97 /* VNScreenObserverProtocol.swift in Sources */,
+				199A05D0224E66F400898B97 /* VNView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +435,9 @@
 		};
 		199A05C6224E63D700898B97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C78389D9932129305457FDBE /* Pods-Venice.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.micheledesena.Venice;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,7 +463,9 @@
 		};
 		199A05C7224E63D700898B97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CDF452CEC81B4409B208560 /* Pods-Venice.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -390,7 +490,9 @@
 		};
 		199A05C9224E63D700898B97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A952081167F2508AC520D07D /* Pods-VeniceTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4L4S7MAUX;
 				INFOPLIST_FILE = VeniceTests/Info.plist;
@@ -408,7 +510,9 @@
 		};
 		199A05CA224E63D700898B97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0371DD0EB131C2136A36145C /* Pods-VeniceTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4L4S7MAUX;
 				INFOPLIST_FILE = VeniceTests/Info.plist;
